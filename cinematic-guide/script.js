@@ -1,16 +1,6 @@
 (() => {
   "use strict";
 
-  const sceneSources = {
-    hero: document.querySelector(".sky-img")?.src,
-    baisha: document.querySelector(".back-bazaar")?.src,
-    courtyard: document.querySelector(".back-four")?.src,
-  };
-  document.querySelectorAll("[data-scene-copy]").forEach((image) => {
-    const source = sceneSources[image.dataset.sceneCopy];
-    if (source) image.src = source;
-  });
-
   const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
   const ease = (value) => {
     const x = clamp(value);
