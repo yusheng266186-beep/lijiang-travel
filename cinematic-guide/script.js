@@ -327,7 +327,15 @@
   });
 
   const openDayFromHash = () => {
-    const card = document.querySelector(location.hash);
+    const rawHash = location.hash.slice(1);
+    if (!rawHash) return;
+    let targetId;
+    try {
+      targetId = decodeURIComponent(rawHash);
+    } catch {
+      return;
+    }
+    const card = document.getElementById(targetId);
     if (!card?.classList.contains("day-card")) return;
     card.classList.add("is-open");
     card.querySelector(".day-toggle")?.setAttribute("aria-expanded", "true");
