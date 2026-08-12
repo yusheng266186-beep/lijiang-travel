@@ -465,6 +465,27 @@
   window.addEventListener("resize", () => updateSight(sightIndex, false));
   updateSight(0, false);
 
+  const photoCards = [...document.querySelectorAll(".photo-card")];
+  const togglePhotoCard = (card) => {
+    const willFlip = !card.classList.contains("is-flipped");
+    photoCards.forEach((other) => {
+      if (other === card) return;
+      other.classList.remove("is-flipped");
+      other.setAttribute("aria-pressed", "false");
+    });
+    card.classList.toggle("is-flipped", willFlip);
+    card.setAttribute("aria-pressed", String(willFlip));
+  };
+
+  photoCards.forEach((card) => {
+    card.addEventListener("click", () => togglePhotoCard(card));
+    card.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      togglePhotoCard(card);
+    });
+  });
+
   const decisionButtons = [...document.querySelectorAll("[data-decision]")];
   const decisionOutput = document.querySelector("#decisionOutput");
   const updateDecision = () => {
