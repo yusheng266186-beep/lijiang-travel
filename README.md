@@ -6,6 +6,27 @@
 > 详细整合版：[打开 cinematic-guide](https://yusheng266186-beep.github.io/lijiang-travel/cinematic-guide/)  
 > GitHub：[查看源代码](https://github.com/yusheng266186-beep/lijiang-travel)
 
+<!-- project-navigation:start -->
+## 项目概览
+
+| 项目 | 说明 |
+| --- | --- |
+| 分类 | 旅行与互动展示 |
+| 平台 | 浏览器 / 静态网页 |
+| 当前定位 | 已归档 · 旅行展示 |
+
+丽江与香格里拉六日旅行的视觉展示网页。
+
+[历史页面](https://yusheng266186-beep.github.io/lijiang-travel/) · [使用与开发](#使用方式) · [项目总导航](https://github.com/yusheng266186-beep/yusheng266186-beep)
+
+同一目的地的随身手册还有 [六日慢旅行](https://github.com/yusheng266186-beep/ljxl-trip) 和 [漫山随身手册](https://github.com/yusheng266186-beep/manshan-guide)，侧重点与版式各自保留。
+
+**归档说明：** 本库保留历史作品与当时的开发、部署或行程记录。原文中的日期、价格和版本具有历史语境，使用前需核对当前信息。
+
+**阅读导航：** [使用方式](#使用方式) · [目录结构](#目录结构)
+
+<!-- project-navigation:end -->
+
 ## 项目定位
 
 本仓库同时保留两个层次的页面：
